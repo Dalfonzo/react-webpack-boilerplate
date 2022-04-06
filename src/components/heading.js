@@ -1,5 +1,5 @@
 import React from 'react'
 
 export default function Heading() {
-    return <p>Heading</p>
+    return <p>Heading 2</p>
 }

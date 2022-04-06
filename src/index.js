@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Heading from './heading'
-import Paragraph from './paragraph'
+import Heading from './components/heading'
+import Paragraph from './components/paragraph'
+import './index.css'
 
 function App() {
     return (
