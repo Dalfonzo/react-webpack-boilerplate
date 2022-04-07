@@ -40,6 +40,17 @@ module.exports = {
                 exclude: /node_modules/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
             },
+            {
+                test: /\.(jpg|jpeg|png|gif|woff|eot|ttf|svg|mp4|webm)$/,
+                use: {
+                    loader: 'url-loader',
+                    options: {
+                        limit: 8192,
+                        outputPath: 'assets/',
+                        name: '[contenthash].[ext]',
+                    },
+                },
+            },
         ],
     },
 }
