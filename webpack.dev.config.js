@@ -16,12 +16,12 @@ module.exports = merge(common, {
             {
                 test: /\.css$/,
                 exclude: /node_modules/,
-                use: ['style-loader', 'css-loader'],
+                use: ['style-loader', 'css-loader', 'postcss-loader'],
             },
             {
-                test: /\.scss$/,
+                test: /\.(scss|sass)$/,
                 exclude: /node_modules/,
-                use: ['style-loader', 'css-loader', 'sass-loader'],
+                use: ['style-loader', 'css-loader', 'sass-loader', 'postcss-loader'],
             },
         ],
     },
