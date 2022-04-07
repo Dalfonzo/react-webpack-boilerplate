@@ -3,15 +3,3 @@
     margin: 0;
     padding: 0;
 }
-
-p {
-    color: red;
-}
-
-div {
-    display: grid;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
-}
