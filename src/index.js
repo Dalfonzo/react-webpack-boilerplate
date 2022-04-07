@@ -1,9 +1,9 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import './index.css'
 
 function App() {
-    return <h1>Javascript Boilerplate using webpack</h1>
+    return <h1>React boilerplate using webpack</h1>
 }
 
-ReactDOM.render(<App />, document.querySelector('#root'))
+createRoot(document.querySelector('#root')).render(<App />)
